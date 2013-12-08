@@ -1,0 +1,91 @@
+//Media Queries
+
+
+/* Extra Small devices (Phones, <768px)) */
+@media (max-width: 767px){
+    .intro {
+        margin: 10px 15px 20px 15px;
+        padding: 10px 15px 15px 15px;
+    }
+    footer {
+        padding-left: 40px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    .social {
+        float: left;
+        padding-left: 0px;
+    }
+    .contact-main {
+        section {
+            margin: 50px 30px 30px 30px;
+        }
+        .content {
+            padding-top: 10px;
+        }
+}    
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar-collapse .navbar-nav.navbar-right:last-child {
+        margin-right: 5px;
+    }   
+    .nav>li>a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }      
+    .nav {
+        margin-bottom: 10px;
+    }
+    .intro {
+        margin: 10px 15px 20px 15px;
+        padding: 10px 15px 15px 15px;
+    }
+    footer {
+        padding-left: 40px;
+    }
+
+    .contact-main {
+        section {
+            padding-top: 50px;
+            padding-right: 0px;
+            padding-left:20px;
+            padding-bottom:40px;
+        }
+        .content {
+            padding-top: 80px;
+        }
+}
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+    .nav {
+        margin-bottom: 20px;
+    }
+    footer {
+        padding-left: 20px;
+    }
+    .intro {
+        margin: 55px 0 0 0;
+        padding: 10px 15px 15px 15px;
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .nav>li>a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container {
+        max-width: 1170px;
+    }
+}

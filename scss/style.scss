@@ -1,0 +1,274 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:800,200,500,400,300,600,100);
+
+// Colors
+$white: #fff;
+$black: #000;
+$salmon: #EE5058;
+$darkGray: #282f39;
+$lightGray: #dfdfdf;
+$blue: #608d91;
+
+// Typography
+$baseFontFamily: "Raleway", Sans-serif;
+$baseFontSize: 15px;
+$baseLineHeight: 1.6;
+
+$headingsFontFamily: "Raleway", sans-serif;
+$headingsLineHeight: 1.4;
+
+$h1FontSize: 30px;
+$h1FontWeight: 100;
+
+$h2FontSize: 48px;
+$h2FontWeight: 300;
+
+$h3FontSize: 17px;
+$h3FontWeight: 500;
+
+
+
+/* Global rules */
+html {
+    background-image: url(../images/linen-paper-texture.jpg);
+}
+body {
+    -webkit-box-shadow: 0px 0px 24px 16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px 16px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px 16px rgba(0,0,0,0.75);
+    max-width:1500px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $white;
+    font-family: $baseFontFamily;
+    font-weight: 400;
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+    color: $black;
+}
+h1 { 
+    font-family: $headingsFontFamily;
+    font-size: $h1FontSize;
+    font-weight: $h1FontWeight;
+    line-height: $headingsLineHeight;
+    color: $white;
+    background-color: $darkGray;
+}
+h2 {
+    margin-left:-2px;
+    font-family: $headingsFontFamily;
+    font-size: $h2FontSize;
+    font-weight: $h2FontWeight;
+    line-height: 1;
+    color: $darkGray;
+}
+h3 { 
+    font-family: $headingsFontFamily;
+    font-size: $h3FontSize;
+    font-weight: $h3FontWeight;
+    line-height: $headingsLineHeight;
+    color: $salmon;
+    text-transform:uppercase;
+}
+a {
+    text-decoration:none;
+    color: $white;
+}
+footer {
+    color: $white;
+    height: auto;
+    background-color: $darkGray;
+    padding: 20px 20px 20px 20px;
+    a:hover {
+        text-decoration:none;
+        color: $lightGray;
+    }
+}
+
+
+// bs override for button styling
+.btn-primary {
+    margin-top: 15px;
+    color: $white;
+    background-color: rgba(238, 80, 88, .8);
+    border-color: transparent;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: $darkGray;
+  border-color: $black;
+}
+
+
+/* Home Page */
+.home-main {
+    background-image: url(../images/seabackground.jpg);
+    background-size: cover;
+    min-height: 600px;
+}
+
+
+.intro {
+          -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;    
+}
+
+.triangle-right {
+position: relative;
+float:right;
+padding: 0px 20px 30px 20px;
+margin: 1em 0 3em;
+background: rgba(255, 255, 255, .8);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.triangle-right:after {
+content: "";
+position: absolute;
+bottom: -20px;
+left: 50px;
+border-width: 20px 0 0 20px;
+border-style: solid;
+border-color: $white transparent;
+display: block;
+width: 0;
+}
+
+.triangle-right.left {
+margin-top: 50px;
+margin-right: 30px;
+background: rgba(255, 255, 255, .8);
+}
+
+.triangle-right.left:after {
+top: 50px;
+left: -40px;
+bottom: auto;
+border-width: 15px 40px 0 0;
+border-color: transparent rgba(255, 255, 255, .8);
+}
+
+
+
+.intro-img {
+    padding-right: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.recentworks {
+    background-color:$lightGray;
+    padding-bottom: 40px;
+    border-top: 1px solid $darkGray;
+    img {
+        background-color:$white;
+        border: 1px solid $black;
+        border: 1px solid $darkGray; 
+        padding: 3px;
+        margin: 3px;
+        
+    }
+
+}
+
+/* Portfolio Page */
+.portfolio-main {
+    padding-top: 70px;
+    background-image: url(../images/woodbackground.jpg);   
+    background-size: cover;
+    section {
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:40px; 
+    }
+}
+
+
+/* About Page */
+.aboutme {
+    background-color:$white;
+    border-bottom: 1px solid $black;    
+    }
+.aboutpics {
+    background-color:$lightGray;
+    padding-top: 30px;    
+    padding-bottom: 30px;
+    img {
+        background-color:$white;
+        border: 1px solid $darkGray; 
+        padding: 3px;
+        margin: 3px;
+    }   
+}
+
+
+
+/* Contact Page */
+.contact-main {
+    background-image: url(../images/sunsetbackground.jpg);
+    background-size: cover;
+    min-height:600px;
+    .content {
+        padding-top: 50px;
+        div {
+            margin-left: 5px;
+        }
+    }
+}
+.form-control{
+    margin-bottom: 10px;
+}
+
+/* Footer Nav - Social Media */
+
+.copyright {
+    padding-top:15px; 
+}
+
+
+
+.social {
+    display: block;
+    float: right;
+    list-style: none;
+    margin: 0;
+    
+    li {
+        display: inline-block;
+        
+        a {
+            color: $white;
+            font-size: 35px;
+            padding-left:20px;
+            
+        }
+    }
+}
+
+.social li a i:hover {
+    color: $salmon;
+}
+
+
+
+
+
+
+
+// Import Partials
+@import "navbar"; 
+@import "thumbnail";
+

@@ -1,0 +1,63 @@
+/* bs nav overrides */
+.header {
+    height: auto;
+}
+
+.heading1 {
+    margin-top: 20px;
+    background: transparent;
+}
+
+.navbar-brand {
+    padding-left: 0;
+}
+
+.navbar-default {
+    background-color: $darkGray;
+    border-color: transparent;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $white;
+    padding-top: 50px;
+    &:hover {
+        color: $salmon;
+    }
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: $white;
+    background-color: $salmon;
+    height: 100%;
+    &:hover {
+        background-color: rgba(238,80,88,0.8);
+        color: $white;
+    }
+}
+
+.navbar-default .navbar-nav > li > a.btn-sm:hover {
+    color: $salmon;
+}
+
+
+
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+
+.navbar-default .navbar-toggle {
+    margin-top: 60px;
+    margin-right: 30px;
+    &:hover {
+        background-color: lighten($black, 10%);
+    }
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}

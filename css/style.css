@@ -1,0 +1,416 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:800,200,500,400,300,600,100);
+/* Global rules */
+/* line 32, ../scss/style.scss */
+html {
+  background-image: url(../images/linen-paper-texture.jpg);
+}
+
+/* line 35, ../scss/style.scss */
+body {
+  -webkit-box-shadow: 0px 0px 24px 16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 24px 16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 24px 16px rgba(0, 0, 0, 0.75);
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  font-family: "Raleway", Sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+}
+
+/* line 49, ../scss/style.scss */
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1.4;
+  color: white;
+  background-color: #282f39;
+}
+
+/* line 57, ../scss/style.scss */
+h2 {
+  margin-left: -2px;
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+  color: #282f39;
+}
+
+/* line 65, ../scss/style.scss */
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ee5058;
+  text-transform: uppercase;
+}
+
+/* line 73, ../scss/style.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 77, ../scss/style.scss */
+footer {
+  color: white;
+  height: auto;
+  background-color: #282f39;
+  padding: 20px 20px 20px 20px;
+}
+/* line 82, ../scss/style.scss */
+footer a:hover {
+  text-decoration: none;
+  color: #dfdfdf;
+}
+
+/* line 90, ../scss/style.scss */
+.btn-primary {
+  margin-top: 15px;
+  color: white;
+  background-color: rgba(238, 80, 88, 0.8);
+  border-color: transparent;
+}
+
+/* line 100, ../scss/style.scss */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #282f39;
+  border-color: black;
+}
+
+/* Home Page */
+/* line 108, ../scss/style.scss */
+.home-main {
+  background-image: url(../images/seabackground.jpg);
+  background-size: cover;
+  min-height: 600px;
+}
+
+/* line 115, ../scss/style.scss */
+.intro {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* line 128, ../scss/style.scss */
+.triangle-right {
+  position: relative;
+  float: right;
+  padding: 0px 20px 30px 20px;
+  margin: 1em 0 3em;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 139, ../scss/style.scss */
+.triangle-right:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  border-width: 20px 0 0 20px;
+  border-style: solid;
+  border-color: white transparent;
+  display: block;
+  width: 0;
+}
+
+/* line 151, ../scss/style.scss */
+.triangle-right.left {
+  margin-top: 50px;
+  margin-right: 30px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 157, ../scss/style.scss */
+.triangle-right.left:after {
+  top: 50px;
+  left: -40px;
+  bottom: auto;
+  border-width: 15px 40px 0 0;
+  border-color: transparent rgba(255, 255, 255, 0.8);
+}
+
+/* line 167, ../scss/style.scss */
+.intro-img {
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 172, ../scss/style.scss */
+.recentworks {
+  background-color: #dfdfdf;
+  padding-bottom: 40px;
+  border-top: 1px solid #282f39;
+}
+/* line 176, ../scss/style.scss */
+.recentworks img {
+  background-color: white;
+  border: 1px solid black;
+  border: 1px solid #282f39;
+  padding: 3px;
+  margin: 3px;
+}
+
+/* Portfolio Page */
+/* line 188, ../scss/style.scss */
+.portfolio-main {
+  padding-top: 70px;
+  background-image: url(../images/woodbackground.jpg);
+  background-size: cover;
+}
+/* line 192, ../scss/style.scss */
+.portfolio-main section {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+/* About Page */
+/* line 201, ../scss/style.scss */
+.aboutme {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+/* line 205, ../scss/style.scss */
+.aboutpics {
+  background-color: #dfdfdf;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 209, ../scss/style.scss */
+.aboutpics img {
+  background-color: white;
+  border: 1px solid #282f39;
+  padding: 3px;
+  margin: 3px;
+}
+
+/* Contact Page */
+/* line 220, ../scss/style.scss */
+.contact-main {
+  background-image: url(../images/sunsetbackground.jpg);
+  background-size: cover;
+  min-height: 600px;
+}
+/* line 224, ../scss/style.scss */
+.contact-main .content {
+  padding-top: 50px;
+}
+/* line 226, ../scss/style.scss */
+.contact-main .content div {
+  margin-left: 5px;
+}
+
+/* line 231, ../scss/style.scss */
+.form-control {
+  margin-bottom: 10px;
+}
+
+/* Footer Nav - Social Media */
+/* line 237, ../scss/style.scss */
+.copyright {
+  padding-top: 15px;
+}
+
+/* line 243, ../scss/style.scss */
+.social {
+  display: block;
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+/* line 249, ../scss/style.scss */
+.social li {
+  display: inline-block;
+}
+/* line 252, ../scss/style.scss */
+.social li a {
+  color: white;
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+/* line 261, ../scss/style.scss */
+.social li a i:hover {
+  color: #ee5058;
+}
+
+/* bs nav overrides */
+/* line 2, ../scss/_navbar.scss */
+.header {
+  height: auto;
+}
+
+/* line 6, ../scss/_navbar.scss */
+.heading1 {
+  margin-top: 20px;
+  background: transparent;
+}
+
+/* line 11, ../scss/_navbar.scss */
+.navbar-brand {
+  padding-left: 0;
+}
+
+/* line 15, ../scss/_navbar.scss */
+.navbar-default {
+  background-color: #282f39;
+  border-color: transparent;
+}
+
+/* line 20, ../scss/_navbar.scss */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0px;
+}
+
+/* line 25, ../scss/_navbar.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  padding-top: 50px;
+}
+/* line 28, ../scss/_navbar.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ee5058;
+}
+
+/* line 33, ../scss/_navbar.scss */
+.navbar-default .navbar-nav > .active > a {
+  color: white;
+  background-color: #ee5058;
+  height: 100%;
+}
+/* line 37, ../scss/_navbar.scss */
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: rgba(238, 80, 88, 0.8);
+  color: white;
+}
+
+/* line 43, ../scss/_navbar.scss */
+.navbar-default .navbar-nav > li > a.btn-sm:hover {
+  color: #ee5058;
+}
+
+/* line 49, ../scss/_navbar.scss */
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+  margin-right: 0;
+}
+
+/* line 53, ../scss/_navbar.scss */
+.navbar-default .navbar-toggle {
+  margin-top: 60px;
+  margin-right: 30px;
+}
+/* line 56, ../scss/_navbar.scss */
+.navbar-default .navbar-toggle:hover {
+  background-color: #1a1a1a;
+}
+
+/* line 61, ../scss/_navbar.scss */
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+/* line 1, ../scss/_thumbnail.scss */
+.thumbnail {
+  display: inline-block;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  padding: 0px;
+  margin-bottom: 20px;
+  line-height: 1.428571429;
+  background-color: transparent;
+  border: 0px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 18, ../scss/_thumbnail.scss */
+.thumbnail img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3px;
+  background: #282f39;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+}
+
+/* line 31, ../scss/_thumbnail.scss */
+.thumbnail:hover img {
+  opacity: .5;
+}
+
+/* line 35, ../scss/_thumbnail.scss */
+.thumbnail:target img {
+  transform: scale(2.2);
+  z-index: 2;
+  opacity: 1;
+}
+
+/* Thmbnail Tabs - bs overwrite*/
+/* line 45, ../scss/_thumbnail.scss */
+.nav-tabs {
+  border-bottom: 0px;
+  padding-right: 50px;
+}
+/* line 47, ../scss/_thumbnail.scss */
+.nav-tabs li {
+  float: none;
+  margin-bottom: 0px;
+}
+/* line 50, ../scss/_thumbnail.scss */
+.nav-tabs li a:hover {
+  background-color: rgba(223, 223, 223, 0.4);
+  border: rgba(223, 223, 223, 0.6);
+}
+
+/* line 58, ../scss/_thumbnail.scss */
+.nav-tabs li a {
+  background-color: rgba(223, 223, 223, 0.3);
+  color: #dfdfdf;
+  font-weight: 200;
+  border: 1px solid #282f39;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+/* line 69, ../scss/_thumbnail.scss */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: white;
+  font-weight: 300;
+  cursor: default;
+  background-color: #ee5058;
+  border: 1px solid #ee5058;
+  border-bottom-color: transparent;
+}
